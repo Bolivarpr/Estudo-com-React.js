@@ -14,14 +14,25 @@ const Soma =() =>{
         alert('como é amigo')
     };
 
+    {/*faz uma verificação se é uma coisa ou outra*/}
     const time = (x) => {
         if(x) {
             return <p>está muito quente! </p>;
         } else {
             return <p>Hoje está frio! </p>;}
     }
+    
+    {/*useState*/}
+    const [somaNum, setsomaNum] = useState('Internacional');
 
-const [somaNum, setsomaNum] = useState('Internacional');
+    {/*lista renderizada */}
+    const[users, setUsers] = useState([
+        {id: 1, name: 'Marcelo', age: 27},
+        {id: 2, name: 'Andressa', age: 26}, 
+        {id: 3, name: 'Fernanda', age: 25},
+        {id: 4, name: 'Larissa', age: 24},
+
+    ]);
 
     return(
         <div>
@@ -35,14 +46,17 @@ const [somaNum, setsomaNum] = useState('Internacional');
             
             {time(false)}
 
-        <div>
-            <p>Time de Futebol: {somaNum}</p>
-            <button onClick={() => setsomaNum('Palmeiras')}>Mudar Time</button>
-        </div>
-            
+            <div>
+                <p>Time de Futebol: {somaNum}</p>
+                <button onClick={() => setsomaNum('Palmeiras')}>Mudar Time</button>
+            </div>
 
+            
+            
         </div>
+
+        
     )
-}
+};
 
 export default Soma;
