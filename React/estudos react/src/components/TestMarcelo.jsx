@@ -33,9 +33,11 @@ const Soma =() =>{
         {id: 4, name: 'Larissa', age: 24},
 
     ]);
+        
 
     return(
         <div>
+
             <p>do arquivo TestMarcelo - amigo</p>
             <p>{Name} Tem {30 + 1} anos !</p>
             <p>{Name2} mora em {dado.city} tem {dado.age} anos e virou {dado.job}</p>

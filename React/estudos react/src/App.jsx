@@ -6,6 +6,12 @@ import TestMarcelo from './components/TestMarcelo';
 {/*imagem em assets*/}
 import img from './assets/Fernandao.png';
 
+{/*Destruturando props*/}
+import CarDetaills from './components/CarDetaills';
+
+{/*props*/}
+
+
 function App() {
 
   return (
@@ -20,7 +26,8 @@ function App() {
         <TestMarcelo />
         {/*imagem em assets*/}
         <img src={img} alt="" />
-        
+        {/*Destruturando props*/}
+        <CarDetaills brand='Fiat' km='10000' color='vermelho' />
       </div>
       
   )
