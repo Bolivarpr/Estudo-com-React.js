@@ -9,10 +9,19 @@ import img from './assets/Fernandao.png';
 {/*Destruturando props*/}
 import CarDetaills from './components/CarDetaills';
 
-{/*props*/}
+// renderização de listas com componentes
+const cars = [
+  {id: 1, brand: 'veloster', km: 10000, color: 'vermelho'},
+  {id: 2, brand: 'ferrari', km: 120000, color: 'preto'},
+  {id: 3, brand: 'tesla', km: 2000, color: 'branco'},
+];
 
 
 function App() {
+
+  function showMessage() {
+    alert('funcionou!');
+  };
 
   return (
     
@@ -28,6 +37,14 @@ function App() {
         <img src={img} alt="" />
         {/*Destruturando props*/}
         <CarDetaills brand='Fiat' km='10000' color='vermelho' />
+        {/*reaproveitando componentes*/}
+        <CarDetaills brand='BWM' km='120000' color='preto' />
+        <CarDetaills brand='PORSHE' km='2000' color='branco' />
+        {/*renderização de listas com componentes*/}
+        {cars.map((car) => (
+          <CarDetaills key={car.id} brand={car.brand} km={car.km} color={car.color} />
+        ))}
+        
       </div>
       
   )

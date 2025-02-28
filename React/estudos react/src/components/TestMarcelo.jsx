@@ -52,7 +52,6 @@ const Soma =() =>{
                 <p>Time de Futebol: {somaNum}</p>
                 <button onClick={() => setsomaNum('Palmeiras')}>Mudar Time</button>
             </div>
-
             
             
         </div>
