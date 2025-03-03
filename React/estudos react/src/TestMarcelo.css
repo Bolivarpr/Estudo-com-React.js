@@ -1,0 +1,14 @@
+
+
+p{
+    color: blueviolet;
+}
+
+button:hover{
+    border-color: red;
+}
+
+button{
+    background-color: rgb(104, 104, 84);
+    color: rgb(255, 253, 252);
+}

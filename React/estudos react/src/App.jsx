@@ -23,6 +23,8 @@ function App() {
     alert('funcionou!');
   };
 
+  const redtitle = false;
+
   return (
     
       <div>
@@ -44,6 +46,8 @@ function App() {
         {cars.map((car) => (
           <CarDetaills key={car.id} brand={car.brand} km={car.km} color={car.color} />
         ))}
+
+        <he className={redtitle ? "red-title" : "title"}>vai ter uma classe</he>
         
       </div>
       

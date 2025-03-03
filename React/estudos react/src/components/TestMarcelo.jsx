@@ -1,4 +1,6 @@
+import "../TestMarcelo.css";
 import {useState} from 'react';
+
 
 const Soma =() =>{
     const Name = 'Marcelo';
@@ -34,7 +36,7 @@ const Soma =() =>{
 
     ]);
         
-
+    const n = 12;
     return(
         <div>
 
@@ -51,9 +53,13 @@ const Soma =() =>{
             <div>
                 <p>Time de Futebol: {somaNum}</p>
                 <button onClick={() => setsomaNum('Palmeiras')}>Mudar Time</button>
+                
             </div>
             
-            
+            <p style={{color:"red"}}>inline style</p>
+            <p style={n > 10 ? {color: "purple"} : {color: "mageta"}}>css dinamico</p>
+
+            <p style={n > 20 ? {color: "purplea"} : {color: "mageta"}}>css dinamico 2</p>
         </div>
 
         
