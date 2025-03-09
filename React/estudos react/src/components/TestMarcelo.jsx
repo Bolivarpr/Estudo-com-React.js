@@ -42,7 +42,6 @@ const Soma =() =>{
 
             <p>do arquivo TestMarcelo - amigo</p>
             <p>{Name} Tem {30 + 1} anos !</p>
-            <p>{Name2} mora em {dado.city} tem {dado.age} anos e virou {dado.job}</p>
 
             <div>
                 <button onClick={handClick}>React</button>
@@ -56,10 +55,11 @@ const Soma =() =>{
                 
             </div>
             
+            {/*mudar cor usando comparação*/}
             <p style={{color:"red"}}>inline style</p>
             <p style={n > 10 ? {color: "purple"} : {color: "mageta"}}>css dinamico</p>
 
-            <p style={n > 20 ? {color: "purplea"} : {color: "mageta"}}>css dinamico 2</p>
+            <p style={n > 20 ? {color: "red"} : {color: "mageta"}}>css dinamico 2</p>
         </div>
 
         

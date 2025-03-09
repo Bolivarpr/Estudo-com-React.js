@@ -8,16 +8,6 @@ const userName = ({brand, km, color, myfunction}) => {
                 <li>cor:  {color}</li>
             </ul>
 
-            <>
-            <div>
-                <p>oi</p>
-            </div>
-            <div>
-                <p>bora</p>
-            </div>
-
-            </>
-
         </div>
         );
     };

@@ -20,7 +20,6 @@ const FirstComponents = () => {
 
 const name = 'Marcelo';
 
-
     return (
         <div>
             <h2>First Component</h2>
