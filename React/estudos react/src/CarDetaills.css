@@ -1,0 +1,26 @@
+.add-product{
+    border: solid 1px red;
+    height: 120px;
+    width: 180px;
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color:#888
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+}

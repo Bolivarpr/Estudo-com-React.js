@@ -12,21 +12,6 @@ const Soma =() =>{
         job: 'programadora',
     };
 
-    const handClick = () => {
-        alert('como é amigo')
-    };
-
-    {/*faz uma verificação se é uma coisa ou outra*/}
-    const time = (x) => {
-        if(x) {
-            return <p>está muito quente! </p>;
-        } else {
-            return <p>Hoje está frio! </p>;}
-    }
-    
-    {/*useState*/}
-    const [somaNum, setsomaNum] = useState('Internacional');
-
     {/*lista renderizada */}
     const[users, setUsers] = useState([
         {id: 1, name: 'Marcelo', age: 27},
@@ -36,11 +21,8 @@ const Soma =() =>{
 
     ]);
         
-    const n = 12;
     return(
         <div>
-
-            <p>do arquivo TestMarcelo - amigo</p>
             <p>{Name} Tem {30 + 1} anos !</p>
             
         </div>

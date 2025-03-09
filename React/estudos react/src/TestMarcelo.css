@@ -8,6 +8,7 @@ button:hover{
 }
 
 button{
-    background-color: rgb(104, 104, 84);
-    color: rgb(255, 253, 252);
+    background-color: rgb(255, 255, 255);
+    color: rgb(68, 10, 6);
+    margin: 8px;
 }

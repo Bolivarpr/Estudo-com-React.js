@@ -40,7 +40,7 @@ useEffect(() => {
         {/*arquivos em components*/}
         <FirstComponents />
         <TestMarcelo />
-
+        <CarDetaills />
         <h1 style={{color: "red"}}>HTTP com REACT</h1>
         
         <ul>

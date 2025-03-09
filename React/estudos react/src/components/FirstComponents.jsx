@@ -4,9 +4,6 @@ import { useState } from "react";
 
 const FirstComponents = () => {
     
-    {/*useState*/}
-    const[otherData, setOtherData] = useState('Marcelo');
-    
     {/*renderização de lista*/}
     const[users, setUsers] = useState([
         {id: 1, name: 'Marcelo', age: 27},
@@ -15,14 +12,8 @@ const FirstComponents = () => {
         {id: 4, name: 'Larissa', age: 24},
     ]);
 
-    {/*renderização condicional*/}
-    const x = true;
-
-const name = 'Marcelo';
-
     return (
         <div>
-            <h2>First Component</h2>
             <div>
 
                 {/*propriedade key*/}
