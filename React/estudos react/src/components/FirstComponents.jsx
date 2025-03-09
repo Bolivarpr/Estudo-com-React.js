@@ -24,29 +24,6 @@ const name = 'Marcelo';
         <div>
             <h2>First Component</h2>
             <div>
-            
-            {/*renderização condicional*/}
-            {name === 'Gabe' ?(
-                <div>
-                    <p>olá Marcelo</p>
-                </div>
-            ) : (
-                <div>
-                    <p>nome não encontrado</p>
-                </div>
-            )}
-
-            <div>
-                    <h3>isso sera exibido?</h3>
-                    {x && <p>eu sou colorado</p>}
-                </div>
-
-               <div>
-
-                {/*useState*/}
-                <p>Valor: {otherData}</p>
-                <button onClick= {()=> setOtherData('Fernanda')}>Mudar State</button>
-               </div>
 
                 {/*propriedade key*/}
                 <div>

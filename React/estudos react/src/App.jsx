@@ -9,28 +9,13 @@ import './App.css';
 import FirstComponents from './components/FirstComponents';
 import TestMarcelo from './components/TestMarcelo';
 
-{/*imagem em assets*/}
-import img from './assets/Fernandao.png';
-
 {/*Destruturando props*/}
-import CarDetaills from './components/CarDetaills';
-
-// renderização de listas com componentes
-const cars = [
-  {id: 1, brand: 'veloster', km: 10000, color: 'vermelho'},
-  {id: 2, brand: 'ferrari', km: 120000, color: 'preto'},
-  {id: 3, brand: 'tesla', km: 2000, color: 'branco'},
-]; 
+import CarDetaills from './components/CarDetaills'; 
 
 function App() {
 
-  function showMessage() {
-    alert('funcionou!');
-  };
-
-  const redtitle = false;
-{/* renderizar usando api json no react*/}
-const [products, steProducts] = useState([]);
+{/* renderizar usando API json no react*/}
+const [products, setProducts] = useState([]);
 
 useEffect(() => {
   async function getData() {
@@ -38,7 +23,7 @@ useEffect(() => {
 
     const data = await res.json();
 
-  steProducts(data)
+  setProducts(data)
   }
   getData();
 }, []);
@@ -56,23 +41,6 @@ useEffect(() => {
         <FirstComponents />
         <TestMarcelo />
 
-        {/*imagem em assets*/}
-        <img src={img} alt="" />
-
-        {/*Destruturando props*/}
-        <CarDetaills brand='Fiat' km='100' color='vermelho' />
-
-        {/*reaproveitando componentes
-        <CarDetaills brand='BWM' km='120000' color='preto' />
-        <CarDetaills brand='PORSHE' km='2000' color='branco' />*/}
-
-        {/*renderização de listas com componentes*/}
-        {cars.map((car) => (
-          <CarDetaills key={car.id} brand={car.brand} km={car.km} color={car.color} />
-        ))}
-
-        <he className={redtitle ? "red-title" : "title"}>vai ter uma classe</he>
-          <hr />
         <h1 style={{color: "red"}}>HTTP com REACT</h1>
         
         <ul>
